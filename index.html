@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get 25 Premium WordPress Website Themes for just $6. Professional, responsive, and ready-to-use templates for every business.">
+    <title>85 Services - 25 Premium WordPress Themes Pack</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Floating Shapes */
+        .shape {
+            position: fixed;
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .shape1 { width: 300px; height: 300px; background: white; top: 10%; left: 10%; animation-delay: 0s; }
+        .shape2 { width: 200px; height: 200px; background: white; top: 60%; right: 15%; animation-delay: 3s; }
+        .shape3 { width: 150px; height: 150px; background: white; bottom: 20%; left: 50%; animation-delay: 6s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(180deg); }
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 65px;
+            height: 65px;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.15);
+            box-shadow: 0 10px 40px rgba(37, 211, 102, 0.6);
+        }
+
+        @keyframes pulse-whatsapp {
+            0%, 100% { box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 8px 40px rgba(37, 211, 102, 0.7); }
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            padding: 1rem 0;
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        .nav-cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.6);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            position: relative;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.95);
+            color: #667eea;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .price-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 2.5rem;
+            border-radius: 25px;
+            margin: 3rem auto;
+            max-width: 500px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+
+        .old-price {
+            font-size: 1.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: line-through;
+            margin-bottom: 0.5rem;
+        }
+
+        .new-price {
+            font-size: 5rem;
+            font-weight: 900;
+            color: white;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            margin: 1rem 0;
+        }
+
+        .savings {
+            font-size: 1.3rem;
+            color: #ffd700;
+            font-weight: 700;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            animation: fadeInUp 0.8s ease 0.8s both;
+        }
+
+        .btn {
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #667eea;
+            box-shadow: 0 8px 30px rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(255, 255, 255, 0.5);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 4rem;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 1s both;
+        }
+
+        .indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .indicator-icon {
+            font-size: 1.8rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem;
+            border-radius: 50%;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 6rem 2rem;
+            background: white;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.3rem;
+            color: #666;
+        }
+
+        .contact-notice {
+            background: linear-gradient(135deg, #fff3cd 0%, #fff8e1 100%);
+            border-left: 4px solid #ffc107;
+            color: #856404;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem auto 0;
+            max-width: 900px;
+            font-size: 1.1rem;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .notice-highlight {
+            font-weight: 700;
+            color: #d39e00;
+        }
+
+        .features-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s;
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(102, 126, 234, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* Categories Section */
+        .categories {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .categories-grid {
+            max-width: 1400px;
+            margin: 4rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s;
+            position: relative;
+        }
+
+        .category-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.2);
+        }
+
+        .category-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .category-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .category-card h3 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-count {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .category-body {
+            padding: 2rem;
+        }
+
+        .category-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .category-features li {
+            padding: 0.8rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #444;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .category-features li:last-child {
+            border-bottom: none;
+        }
+
+        .check-icon {
+            color: #4ade80;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .preview-label {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #1a1a1a;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-align: center;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        /* Bonus Card Styles */
+        .bonus-card {
+            position: relative;
+            transform: scale(1.05);
+            border: 3px solid #ffd700;
+            box-shadow: 0 15px 50px rgba(255, 215, 0, 0.3);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 15px 50px rgba(255, 215, 0, 0.3);
+                border-color: #ffd700;
+            }
+            50% {
+                box-shadow: 0 20px 60px rgba(255, 215, 0, 0.6);
+                border-color: #ffed4e;
+            }
+        }
+
+        .bonus-ribbon {
+            position: absolute;
+            top: 20px;
+            right: -10px;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            font-weight: 800;
+            font-size: 0.9rem;
+            z-index: 10;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+            animation: bounce-ribbon 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce-ribbon {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .bonus-icon {
+            font-size: 5rem !important;
+            animation: rotate-shake 3s ease-in-out infinite;
+        }
+
+        @keyframes rotate-shake {
+            0%, 100% { transform: rotate(0deg) scale(1); }
+            25% { transform: rotate(-15deg) scale(1.1); }
+            75% { transform: rotate(15deg) scale(1.1); }
+        }
+
+        .bonus-card .category-header {
+            background: linear-gradient(135deg, #ffd700 0%, #ffb700 100%);
+            color: #1a1a1a;
+        }
+
+        .bonus-card h3 {
+            font-size: 2rem;
+            text-shadow: 0 2px 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .bonus-label {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            color: white;
+            font-size: 1.1rem;
+            padding: 1rem 1.5rem;
+            animation: pulse-bonus 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-bonus {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 6rem 2rem;
+            background: white;
+            overflow: hidden;
+        }
+
+        .testimonials-slider {
+            max-width: 1400px;
+            margin: 4rem auto;
+            position: relative;
+        }
+
+        .testimonials-track {
+            display: flex;
+            gap: 2rem;
+            animation: scroll-testimonials 40s linear infinite;
+            cursor: grab;
+        }
+
+        .testimonials-track:active {
+            cursor: grabbing;
+        }
+
+        .testimonials-track:hover {
+            animation-play-state: paused;
+        }
+
+        .testimonials-slider {
+            max-width: 1400px;
+            margin: 4rem auto;
+            position: relative;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scrollbar-width: thin;
+            scrollbar-color: #667eea #f0f0f0;
+        }
+
+        .testimonials-slider::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .testimonials-slider::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        .testimonials-slider::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 10px;
+        }
+
+        .testimonials-slider::-webkit-scrollbar-thumb:hover {
+            background: #764ba2;
+        }
+
+        @keyframes scroll-testimonials {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .testimonial-card {
+            min-width: 400px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 2px solid transparent;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            border-color: #667eea;
+            box-shadow: 0 20px 50px rgba(102, 126, 234, 0.2);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .testimonial-info h4 {
+            font-size: 1.3rem;
+            color: #1a1a1a;
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+
+        .testimonial-location {
+            color: #666;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .testimonial-stars {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            color: #444;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            font-style: italic;
+            position: relative;
+        }
+
+        .testimonial-text::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            font-size: 4rem;
+            color: #667eea;
+            opacity: 0.2;
+        }
+
+        .testimonial-verified {
+            display: inline-block;
+            background: #4ade80;
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-card {
+                min-width: 300px;
+            }
+        }
+
+        /* Package Section */
+        .package {
+            padding: 6rem 2rem;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .package::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.05) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .package-content {
+            max-width: 700px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 4rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+            color: white;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .package h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 900;
+        }
+
+        .package-price {
+            font-size: 6rem;
+            font-weight: 900;
+            margin: 2rem 0;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .package-includes {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .package-includes li {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .package-includes li:last-child {
+            border-bottom: none;
+        }
+
+        /* Payment Section */
+        .payment {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+        }
+
+        .payment-container {
+            max-width: 1000px;
+            margin: 4rem auto;
+            background: white;
+            border-radius: 25px;
+            padding: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .payment-method {
+            padding: 2rem 0;
+        }
+
+        .payment-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #e0e0e0 50%, transparent 100%);
+            margin: 0.5rem 0;
+        }
+
+        .payment-method:last-child {
+            padding-bottom: 0;
+        }
+
+        .payment-method:first-child {
+            padding-top: 0;
+        }
+
+        .payment-method-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .payment-method-icon {
+            font-size: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .payment-method-header h3 {
+            font-size: 1.8rem;
+            color: #1a1a1a;
+            font-weight: 800;
+            margin: 0;
+        }
+
+        .payment-method-details {
+            margin-left: 76px;
+        }
+
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .detail-label {
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 600;
+            min-width: 150px;
+        }
+
+        .detail-value {
+            font-size: 1.15rem;
+            color: #1a1a1a;
+            font-weight: 700;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            flex: 1;
+            text-align: right;
+        }
+
+        .crypto-address {
+            word-break: break-all;
+            font-size: 0.95rem;
+        }
+
+        .payment-footer {
+            max-width: 1000px;
+            margin: 3rem auto 0;
+            text-align: center;
+        }
+
+        .payment-notice {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-left: 4px solid #667eea;
+            padding: 2rem;
+            border-radius: 15px;
+            display: flex;
+            gap: 1.5rem;
+            align-items: start;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .notice-icon {
+            font-size: 2.5rem;
+            flex-shrink: 0;
+        }
+
+        .notice-content h4 {
+            font-size: 1.3rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .notice-content p {
+            color: #444;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            color: white;
+            font-size: 1.2rem;
+            padding: 1.2rem 3rem;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-btn:hover {
+            background: linear-gradient(135deg, #128c7e 0%, #25d366 100%);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+        }
+
+        /* Steps Section */
+        .steps {
+            padding: 6rem 2rem;
+            background: white;
+        }
+
+        .steps-container {
+            max-width: 1000px;
+            margin: 4rem auto;
+        }
+
+        .step {
+            display: flex;
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+            align-items: start;
+        }
+
+        .step-number {
+            min-width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 900;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 1.8rem;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .step-content p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .whatsapp-footer {
+            background: rgba(37, 211, 102, 0.15);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+
+        .whatsapp-footer h3 {
+            color: #25d366;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .whatsapp-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design - Mobile First */
+        
+        /* Extra Small Devices (phones, less than 576px) */
+        @media (max-width: 575px) {
+            .hero {
+                padding: 6rem 1rem 3rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .badge {
+                font-size: 0.8rem;
+                padding: 0.5rem 1rem;
+            }
+            
+            .old-price {
+                font-size: 1.3rem;
+            }
+            
+            .new-price {
+                font-size: 3rem;
+            }
+            
+            .savings {
+                font-size: 1rem;
+            }
+            
+            .price-box {
+                padding: 1.5rem;
+            }
+            
+            .btn {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                width: 100%;
+            }
+            
+            .cta-group {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .trust-indicators {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+            
+            .indicator {
+                font-size: 0.85rem;
+            }
+            
+            .indicator-icon {
+                font-size: 1.3rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1rem;
+            }
+            
+            .features-grid,
+            .categories-grid,
+            .payment-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .feature-card,
+            .category-card {
+                padding: 1.5rem;
+            }
+            
+            .feature-icon {
+                font-size: 2.5rem;
+            }
+            
+            .category-icon {
+                font-size: 3rem;
+            }
+            
+            .bonus-icon {
+                font-size: 4rem !important;
+            }
+            
+            .bonus-card {
+                transform: scale(1);
+            }
+            
+            .bonus-ribbon {
+                font-size: 0.75rem;
+                padding: 0.4rem 1rem;
+                right: 0;
+            }
+            
+            .package-content {
+                padding: 2rem;
+            }
+            
+            .package h2 {
+                font-size: 2rem;
+            }
+            
+            .package-price {
+                font-size: 3.5rem;
+            }
+            
+            .package-includes {
+                padding: 1.5rem;
+            }
+            
+            .package-includes li {
+                font-size: 0.95rem;
+            }
+            
+            .payment-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .payment-icon {
+                font-size: 3rem;
+            }
+            
+            .payment-details {
+                font-size: 0.85rem;
+            }
+
+            .payment-container {
+                padding: 2rem 1.5rem;
+            }
+
+            .payment-method-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .payment-method-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 2rem;
+            }
+
+            .payment-method-header h3 {
+                font-size: 1.4rem;
+            }
+
+            .payment-method-details {
+                margin-left: 0;
+            }
+
+            .detail-row {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0.8rem 0;
+            }
+
+            .detail-label {
+                font-size: 0.95rem;
+                min-width: auto;
+            }
+
+            .detail-value {
+                font-size: 1rem;
+                text-align: left;
+                width: 100%;
+            }
+
+            .payment-notice {
+                flex-direction: column;
+                padding: 1.5rem;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .notice-icon {
+                font-size: 2rem;
+            }
+
+            .notice-content h4 {
+                font-size: 1.1rem;
+            }
+
+            .notice-content p {
+                font-size: 0.95rem;
+            }
+
+            .whatsapp-btn {
+                font-size: 1rem;
+                padding: 1rem 2rem;
+                width: 100%;
+            }
+            
+            .step {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .step-number {
+                min-width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            
+            .step-content h3 {
+                font-size: 1.4rem;
+            }
+            
+            .step-content p {
+                font-size: 1rem;
+            }
+            
+            .testimonial-card {
+                min-width: 280px;
+            }
+            
+            .testimonial-avatar {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+            
+            .testimonial-info h4 {
+                font-size: 1.1rem;
+            }
+            
+            .testimonial-location {
+                font-size: 0.85rem;
+            }
+            
+            .testimonial-text {
+                font-size: 0.95rem;
+            }
+            
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                font-size: 28px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            nav {
+                padding: 0 1rem;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .nav-cta {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .footer-logo {
+                font-size: 2rem;
+            }
+            
+            .whatsapp-number {
+                font-size: 1.4rem;
+            }
+        }
+        
+        /* Small Devices (landscape phones, 576px and up) */
+        @media (min-width: 576px) and (max-width: 767px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .new-price {
+                font-size: 3.5rem;
+            }
+            
+            .section-title {
+                font-size: 2.3rem;
+            }
+            
+            .package-price {
+                font-size: 4rem;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonial-card {
+                min-width: 320px;
+            }
+            
+            .step {
+                flex-direction: column;
+            }
+
+            .payment-container {
+                padding: 2rem 1.5rem;
+            }
+
+            .payment-method-details {
+                margin-left: 0;
+            }
+
+            .detail-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .detail-value {
+                text-align: left;
+                width: 100%;
+            }
+        }
+        
+        /* Medium Devices (tablets, 768px and up) */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero p {
+                font-size: 1.3rem;
+            }
+            
+            .new-price {
+                font-size: 4rem;
+            }
+            
+            .section-title {
+                font-size: 2.8rem;
+            }
+            
+            .package-price {
+                font-size: 5rem;
+            }
+            
+            .categories-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .testimonial-card {
+                min-width: 350px;
+            }
+            
+            .bonus-card {
+                transform: scale(1.02);
+            }
+
+            .payment-method-details {
+                margin-left: 0;
+            }
+
+            .detail-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .detail-value {
+                text-align: left;
+                width: 100%;
+            }
+        }
+        
+        /* Large Devices (desktops, 992px and up) */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .hero h1 {
+                font-size: 3.8rem;
+            }
+            
+            .categories-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .testimonial-card {
+                min-width: 380px;
+            }
+        }
+        
+        /* Extra Large Devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            .categories-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .testimonial-card {
+                min-width: 400px;
+            }
+        }
+        
+        /* Landscape Orientation Optimization */
+        @media (max-height: 600px) and (orientation: landscape) {
+            .hero {
+                min-height: auto;
+                padding: 6rem 2rem 2rem;
+            }
+            
+            .price-box {
+                padding: 1.5rem;
+                margin: 2rem auto;
+            }
+            
+            .trust-indicators {
+                margin-top: 2rem;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .whatsapp-float,
+            header,
+            .animated-bg,
+            .shape {
+                display: none;
+            }
+            
+            body {
+                background: white;
+            }
+            
+            .category-card,
+            .feature-card,
+            .payment-card {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/923157376457?text=Hi%2C%20I%20want%20to%20purchase%20the%2025%20WordPress%20Themes%20Pack" 
+       class="whatsapp-float" 
+       target="_blank"
+       title="Contact on WhatsApp">
+        💬
+    </a>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">85 Services</div>
+            <a href="#payment" class="nav-cta">Get Started</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="badge">🎉 Limited Time Offer - 94% OFF</div>
+            <h1>Get <span class="highlight">25 Premium</span><br>WordPress Websites</h1>
+            <p>Professional, Responsive & Ready-to-Use Templates for Every Business + <span class="highlight">Free Plugins</span></p>
+            
+            <div class="price-box">
+                <div class="old-price">Regular Price: $100</div>
+                <div class="new-price">$6</div>
+                <div class="savings">Save $94 Today!</div>
+            </div>
+
+            <div class="cta-group">
+                <a href="#payment" class="btn btn-primary">Download Now</a>
+                <a href="#categories" class="btn btn-secondary">View All Themes</a>
+            </div>
+
+            <div class="trust-indicators">
+                <div class="indicator">
+                    <span class="indicator-icon">⚡</span>
+                    <span>Instant Delivery</span>
+                </div>
+                <div class="indicator">
+                    <span class="indicator-icon">🔒</span>
+                    <span>Secure Payment</span>
+                </div>
+                <div class="indicator">
+                    <span class="indicator-icon">💎</span>
+                    <span>Premium Quality</span>
+                </div>
+                <div class="indicator">
+                    <span class="indicator-icon">💬</span>
+                    <span>WhatsApp Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="section-header">
+            <h2 class="section-title">Why Choose Our Theme Pack?</h2>
+            <p class="section-subtitle">Everything you need to build stunning websites</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Professional Design</h3>
+                <p>Modern, clean, and professionally crafted designs that stand out and convert visitors into customers</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Fully Responsive</h3>
+                <p>Perfect display on all devices - mobile, tablet, and desktop. Your site looks amazing everywhere</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast Loading</h3>
+                <p>Optimized for speed and performance. Lightning-fast load times keep visitors engaged</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Easy to Customize</h3>
+                <p>Simple customization options - change colors, fonts, and content without any coding knowledge</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3>One-Click Install</h3>
+                <p>Quick and easy installation process. Get your website up and running in minutes</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💬</div>
+                <h3>Premium Support</h3>
+                <p>Dedicated WhatsApp support to help you with installation, customization, and any questions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="section-header">
+            <h2 class="section-title">25 Premium WordPress Themes</h2>
+            <p class="section-subtitle">Organized in 10 powerful categories + bonus plugins</p>
+        </div>
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">⚙️</div>
+                    <h3>Admin Dashboard</h3>
+                    <p class="category-count">Professional admin panels</p>
+                </div>
+                <div class="category-body">
+                    <ul class="category-features">
+                        <li><span class="check-icon">✓</span> Modern dashboard layouts</li>
+                        <li><span class="check-icon">✓</span> Data visualization tools</li>
+                        <li><span class="check-icon">✓</span> User management systems</li>
+                        <li><span class="check-icon">✓</span> Analytics integration</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">✍️</div>
+                    <h3>Blog & Portfolio</h3>
+                    <p class="category-count">Creative showcase themes</p>
+                </div>
+                <div class="category-body">
+                    <ul class="category-features">
+                        <li><span class="check-icon">✓</span> Beautiful blog layouts</li>
+                        <li><span class="check-icon">✓</span> Portfolio galleries</li>
+                        <li><span class="check-icon">✓</span> Author profiles</li>
+                        <li><span class="check-icon">✓</span> Social media integration</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">🛒</div>
+                    <h3>E-Commerce</h3>
+                    <p class="category-count">Online store themes</p>
+                </div>
+                <div class="category-body">
+                    <ul class="category-features">
+                        <li><span class="check-icon">✓</span> WooCommerce compatible</li>
+                        <li><span class="check-icon">✓</span> Product showcases</li>
+                        <li><span class="check-icon">✓</span> Shopping cart integration</li>
+                        <li><span class="check-icon">✓</span> Payment gateways ready</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">📚</div>
+                    <h3>Education</h3>
+                    <p class="category-count">Learning platforms</p>
+                </div>
+                <div class="category-body">
+                    <ul class="category-features">
+                        <li><span class="check-icon">✓</span> Course management</li>
+                        <li><span class="check-icon">✓</span> Student portals</li>
+                        <li><span class="check-icon">✓</span> Online learning systems</li>
+                        <li><span class="check-icon">✓</span> Quiz & assignment tools</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">🎬</div>
+                    <h3>Entertainment</h3>
+                    <p class="category-count">Media & streaming sites</p>
+                </div>
+                <div class="category-body">
+                    <ul class="category-features">
+                        <li><span class="check-icon">✓</span> Video streaming layouts</li>
+                        <li><span class="check-icon">✓</span> Music player themes</li>
+                        <li><span class="check-icon">✓</span> Media galleries</li>
+                        <li><span class="check-icon">✓</span> Event management</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">📍</div>
+                    <h3>Listing & Directory</h3>
+                    <p class="category-count">Business directories</p>
+                </div>
+                <div class="category-body">
+                    <ul class="category-features">
+                        <li><span class="check-icon">✓</span> Business listings</li>
+                        <li><span class="check-icon">✓</span> Map integration</li>
+                        <li><span class="check-icon">✓</span> Search & filter systems</li>
+                        <li><span class="check-icon">✓</span> Review & rating features</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">📰</div>
+                    <h3>News & Magazine</h3>
+                    <p class="category-count">Publishing platforms</p>
+                </div>
+                <div class="category-body">
+                    <ul class="category-features">
+                        <li><span class="check-icon">✓</span> News portal layouts</li>
+                        <li><span class="check-icon">✓</span> Magazine designs</li>
+                        <li><span class="check-icon">✓</span> Article categorization</li>
+                        <li><span class="check-icon">✓</span> Breaking news widgets</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">🏠</div>
+                    <h3>Real Estate</h3>
+                    <p class="category-count">Property websites</p>
+                </div>
+                <div class="category-body">
+                    <ul class="category-features">
+                        <li><span class="check-icon">✓</span> Property listings</li>
+                        <li><span class="check-icon">✓</span> Advanced search filters</li>
+                        <li><span class="check-icon">✓</span> Agent profiles</li>
+                        <li><span class="check-icon">✓</span> Virtual tour integration</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">🏨</div>
+                    <h3>Hotel & Resort</h3>
+                    <p class="category-count">Hospitality websites</p>
+                </div>
+                <div class="category-body">
+                    <ul class="category-features">
+                        <li><span class="check-icon">✓</span> Room booking systems</li>
+                        <li><span class="check-icon">✓</span> Reservation management</li>
+                        <li><span class="check-icon">✓</span> Gallery showcases</li>
+                        <li><span class="check-icon">✓</span> Amenities listings</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <div class="category-header">
+                    <div class="category-icon">🍽️</div>
+                    <h3>Restaurant & Cafe</h3>
+                    <p class="category-count">Food service themes</p>
+                </div>
+                <div class="category-body">
+                    <ul class="category-features">
+                        <li><span class="check-icon">✓</span> Menu management</li>
+                        <li><span class="check-icon">✓</span> Online ordering</li>
+                        <li><span class="check-icon">✓</span> Table reservations</li>
+                        <li><span class="check-icon">✓</span> Food galleries</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="category-card bonus-card">
+                <div class="bonus-ribbon">🎉 FREE BONUS</div>
+                <div class="category-header">
+                    <div class="category-icon bonus-icon">🎁</div>
+                    <h3>BONUS: Premium Plugins</h3>
+                    <p class="category-count">Free gift included</p>
+                </div>
+                <div class="category-body">
+                    <ul class="category-features">
+                        <li><span class="check-icon">✓</span> SEO optimization plugins</li>
+                        <li><span class="check-icon">✓</span> Page builder tools</li>
+                        <li><span class="check-icon">✓</span> Security plugins</li>
+                        <li><span class="check-icon">✓</span> Performance boosters</li>
+                    </ul>
+                    <div class="preview-label bonus-label">Worth $50 - FREE!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Section -->
+    <section class="package" id="package">
+        <div class="section-header">
+            <h2 class="section-title">Complete Package Deal</h2>
+            <p class="section-subtitle">Everything you need in one bundle</p>
+        </div>
+        <div class="package-content">
+            <h2>Special Offer</h2>
+            <div class="package-price">$6</div>
+            <p style="font-size: 1.3rem; margin-bottom: 2rem;">One-time payment • Lifetime access</p>
+            
+            <div class="package-includes">
+                <ul style="list-style: none;">
+                    <li><span class="check-icon">✓</span> 25 Premium WordPress Themes</li>
+                    <li><span class="check-icon">✓</span> 10 Professional Categories</li>
+                    <li><span class="check-icon">✓</span> Bonus Premium Plugins</li>
+                    <li><span class="check-icon">✓</span> Full Documentation</li>
+                    <li><span class="check-icon">✓</span> Installation Guides</li>
+                    <li><span class="check-icon">✓</span> WhatsApp Support</li>
+                    <li><span class="check-icon">✓</span> Regular Updates</li>
+                    <li><span class="check-icon">✓</span> Commercial License</li>
+                </ul>
+            </div>
+
+            <a href="#payment" class="btn btn-primary">Get Your Pack Now</a>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="payment" id="payment">
+        <div class="section-header">
+            <h2 class="section-title">Secure Payment Information</h2>
+            <p class="section-subtitle">Complete your purchase using any of the following methods</p>
+            <p class="contact-notice">
+                <span class="notice-highlight">⚠️ Important:</span> Before making any transaction, please contact us on WhatsApp for payment confirmation.
+            </p>
+        </div>
+        
+        <div class="payment-container">
+            <div class="payment-method">
+                <div class="payment-method-header">
+                    <span class="payment-method-icon">💳</span>
+                    <h3>Bank Transfer</h3>
+                </div>
+                <div class="payment-method-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Bank Name:</span>
+                        <span class="detail-value">Meezan Bank Limited</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Account Title:</span>
+                        <span class="detail-value">Muhammad Rehan</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">IBAN Number:</span>
+                        <span class="detail-value">PK60MEZN0000300110553809</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-divider"></div>
+
+            <div class="payment-method">
+                <div class="payment-method-header">
+                    <span class="payment-method-icon">📱</span>
+                    <h3>Mobile Wallet Payments</h3>
+                </div>
+                <div class="payment-method-details">
+                    <div class="detail-row">
+                        <span class="detail-label">EasyPaisa / JazzCash:</span>
+                        <span class="detail-value">+92 324 1784602</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Account Title:</span>
+                        <span class="detail-value">Mazhar Ali</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-divider"></div>
+
+            <div class="payment-method">
+                <div class="payment-method-header">
+                    <span class="payment-method-icon">💰</span>
+                    <h3>Payoneer Payment</h3>
+                </div>
+                <div class="payment-method-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Payment Method:</span>
+                        <span class="detail-value">Contact via WhatsApp for Payment Link</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-divider"></div>
+
+            <div class="payment-method">
+                <div class="payment-method-header">
+                    <span class="payment-method-icon">₿</span>
+                    <h3>Cryptocurrency (Binance USDT)</h3>
+                </div>
+                <div class="payment-method-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Network:</span>
+                        <span class="detail-value">TRX (Tron TRC20)</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Binance USDT Address:</span>
+                        <span class="detail-value crypto-address">TBYTedosYAtR3YQqkT4wdSrm59kmfFhWEt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-footer">
+            <div class="payment-notice">
+                <div class="notice-icon">ℹ️</div>
+                <div class="notice-content">
+                    <h4>Payment Confirmation Required</h4>
+                    <p>After completing your payment, please send the payment screenshot to our WhatsApp number for instant verification and delivery.</p>
+                </div>
+            </div>
+            <a href="https://wa.me/923157376457?text=Hi%2C%20I%20have%20made%20the%20payment%20for%2025%20WordPress%20Themes%20Pack" 
+               class="btn btn-primary whatsapp-btn" 
+               target="_blank">
+                <span style="font-size: 1.3rem; margin-right: 0.5rem;">💬</span>
+                Send Payment Proof on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps" id="how-it-works">
+        <div class="section-header">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Get your themes in 4 simple steps</p>
+        </div>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Choose Payment Method</h3>
+                    <p>Select your preferred payment option from Bank Transfer, EasyPaisa, JazzCash, or Binance USDT. All payment methods are secure and reliable.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Complete Payment</h3>
+                    <p>Make your payment of just $6 using your chosen method. Use the account details provided in the payment section above.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Send Confirmation</h3>
+                    <p>Take a screenshot of your payment confirmation and send it to our WhatsApp number: <strong>+92 315 7376457</strong>. Our team will verify it instantly.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Receive Your Themes</h3>
+                    <p>Within a few minutes, you'll receive an email with your complete theme pack ZIP file, installation instructions, and all documentation. Start building right away!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2 class="section-title">Customer Reviews</h2>
+            <p class="section-subtitle">See what our customers are saying</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="testimonials-track">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">AH</div>
+                        <div class="testimonial-info">
+                            <h4>Ahmed Hassan</h4>
+                            <div class="testimonial-location">📍 Karachi, Pakistan</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Bahut hi zabardast themes hain! Maine apni business website banai aur 2 din mein ready ho gayi. Quality bilkul premium hai aur price bhi bohot kam hai.
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">FN</div>
+                        <div class="testimonial-info">
+                            <h4>Fatima Noor</h4>
+                            <div class="testimonial-location">📍 Lahore, Pakistan</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Mujhe blogging ke liye theme chahiye thi aur yahan 25 themes mein se choose kar sakti thi. Installation bhi bohot easy thi. Highly recommend!
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">MA</div>
+                        <div class="testimonial-info">
+                            <h4>Muhammad Ali</h4>
+                            <div class="testimonial-location">📍 Islamabad, Pakistan</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Sirf $6 mein itne saare professional themes mil gaye! WhatsApp support bhi bohat achi hai. Delivery instant mili. Zabardast service!
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">SK</div>
+                        <div class="testimonial-info">
+                            <h4>Sarah Khan</h4>
+                            <div class="testimonial-location">📍 Dubai, UAE</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Maine apne clients ke liye multiple websites banane ke liye ye pack liya. Har category mein themes hain aur quality outstanding hai.
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">UF</div>
+                        <div class="testimonial-info">
+                            <h4>Usman Farooq</h4>
+                            <div class="testimonial-location">📍 Faisalabad, Pakistan</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        E-commerce theme chahiye thi mere online store ke liye. Yahan se mila aur setup bhi kuch hi minutes mein ho gaya. Bohot khush hoon!
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">JK</div>
+                        <div class="testimonial-info">
+                            <h4>John Martinez</h4>
+                            <div class="testimonial-location">📍 London, UK</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Amazing value for money! The themes are modern, responsive, and easy to customize. Support team was very helpful throughout.
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">AZ</div>
+                        <div class="testimonial-info">
+                            <h4>Ayesha Zafar</h4>
+                            <div class="testimonial-location">📍 Multan, Pakistan</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Meri portfolio website ke liye perfect theme mila. Responsive hai aur mobile pe bhi bohat acha dikhta hai. Thank you 85 Services!
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">RK</div>
+                        <div class="testimonial-info">
+                            <h4>Ravi Kumar</h4>
+                            <div class="testimonial-location">📍 Mumbai, India</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Best investment for my web development agency. Multiple themes for different clients. Quality is top-notch and price is unbeatable!
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <!-- Duplicate set for infinite scroll -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">AH</div>
+                        <div class="testimonial-info">
+                            <h4>Ahmed Hassan</h4>
+                            <div class="testimonial-location">📍 Karachi, Pakistan</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Bahut hi zabardast themes hain! Maine apni business website banai aur 2 din mein ready ho gayi. Quality bilkul premium hai aur price bhi bohot kam hai.
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">FN</div>
+                        <div class="testimonial-info">
+                            <h4>Fatima Noor</h4>
+                            <div class="testimonial-location">📍 Lahore, Pakistan</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Mujhe blogging ke liye theme chahiye thi aur yahan 25 themes mein se choose kar sakti thi. Installation bhi bohot easy thi. Highly recommend!
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">MA</div>
+                        <div class="testimonial-info">
+                            <h4>Muhammad Ali</h4>
+                            <div class="testimonial-location">📍 Islamabad, Pakistan</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Sirf $6 mein itne saare professional themes mil gaye! WhatsApp support bhi bohat achi hai. Delivery instant mili. Zabardast service!
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">SK</div>
+                        <div class="testimonial-info">
+                            <h4>Sarah Khan</h4>
+                            <div class="testimonial-location">📍 Dubai, UAE</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Maine apne clients ke liye multiple websites banane ke liye ye pack liya. Har category mein themes hain aur quality outstanding hai.
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">UF</div>
+                        <div class="testimonial-info">
+                            <h4>Usman Farooq</h4>
+                            <div class="testimonial-location">📍 Faisalabad, Pakistan</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        E-commerce theme chahiye thi mere online store ke liye. Yahan se mila aur setup bhi kuch hi minutes mein ho gaya. Bohot khush hoon!
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">JK</div>
+                        <div class="testimonial-info">
+                            <h4>John Martinez</h4>
+                            <div class="testimonial-location">📍 London, UK</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Amazing value for money! The themes are modern, responsive, and easy to customize. Support team was very helpful throughout.
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">AZ</div>
+                        <div class="testimonial-info">
+                            <h4>Ayesha Zafar</h4>
+                            <div class="testimonial-location">📍 Multan, Pakistan</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Meri portfolio website ke liye perfect theme mila. Responsive hai aur mobile pe bhi bohat acha dikhta hai. Thank you 85 Services!
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">RK</div>
+                        <div class="testimonial-info">
+                            <h4>Ravi Kumar</h4>
+                            <div class="testimonial-location">📍 Mumbai, India</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        Best investment for my web development agency. Multiple themes for different clients. Quality is top-notch and price is unbeatable!
+                    </p>
+                    <span class="testimonial-verified">✓ Verified Purchase</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">85 Services</div>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Premium WordPress Theme Solutions</p>
+
+            <div class="whatsapp-footer">
+                <h3>📱 Customer Support Available</h3>
+                <div class="whatsapp-number">+92 315 7376457</div>
+                <p style="margin-top: 1rem; color: rgba(255,255,255,0.8);">
+                    Contact us on WhatsApp for instant support, payment assistance, or any questions
+                </p>
+            </div>
+
+            <p style="margin-top: 3rem; opacity: 0.7;">&copy; 2026 85 Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .category-card, .payment-card, .step').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
